@@ -13,6 +13,7 @@ public class CourseReportDTO {
 
     private String codCur;
     private String nomCur;
+    private Integer credito;
     private Integer nota;
 
 }

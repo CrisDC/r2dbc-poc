@@ -15,7 +15,7 @@ public class StudentReportMapper {
 
     public static StudentReportDTO repoToDTO(Student student, List<CourseReport> courseReports) {
         StudentReportDTO dto = new StudentReportDTO();
-        dto.setCodAlu(student.getCodAlu());
+        dto.setCodAlu(student.getCodAlu().trim());
         dto.setNomAlu(student.getNomAlu());
         dto.setApeAlu(student.getApeAlu());
         dto.setCourseReports(getCourseReports(courseReports));
