@@ -10,8 +10,9 @@ public class CourseReportMapper {
 
     public static CourseReportDTO repoToDto(CourseReport courseReport) {
         CourseReportDTO dto = new CourseReportDTO();
-        dto.setCodCur(courseReport.getCodCur());
+        dto.setCodCur(courseReport.getCodCur().trim());
         dto.setNomCur(courseReport.getNomCur());
+        dto.setCredito(courseReport.getCredito());
         dto.setNota(courseReport.getNota());
 
         return dto;

@@ -16,6 +16,7 @@ public class CourseReport {
     private String codCur;
     private String codAlu;
     private String nomCur;
+    private Integer credito;
     private Integer nota;
 
 }
